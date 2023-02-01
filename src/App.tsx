@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { AdventureSupplyList } from './adventure-supplies-list';
+import { CharacterViewer } from './character-view';
+import { Greet } from './greeter';
+import { RupeeCalculator } from './rupee-calculator';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+  return <>
+      <h1>Welcome to my Zelda Fanpage</h1>
+      <CharacterViewer></CharacterViewer>
+      <Greet></Greet>
+      <RupeeCalculator></RupeeCalculator>
+      <AdventureSupplyList></AdventureSupplyList>
+    </>
 }
 
 export default App;
